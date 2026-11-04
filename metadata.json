@@ -1,0 +1,6 @@
+{
+  "name": "DEEPAK STAR APP - AI Video Creator",
+  "description": "Complete professional AI Video Creator & Editor Android and Web application by Deepak Patel. Features 3D Blue theme, Text-to-Video, Canvas Video Editor, AdMob monetization, UPI subscriptions, and Web Admin Panel.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

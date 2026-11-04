@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-heading: 'Outfit', sans-serif;
+    --font-body: 'Plus Jakarta Sans', sans-serif;
+  }
+  
+  body {
+    font-family: var(--font-body);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+/* 3D and Royal styling */
+.card-3d-blue {
+  background: linear-gradient(135deg, rgba(30, 58, 138, 0.85) 0%, rgba(15, 23, 42, 0.95) 100%);
+  box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.25), 0 8px 10px -6px rgba(37, 99, 235, 0.2);
+  border: 1px solid rgba(96, 165, 250, 0.25);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-3d-blue:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 20px 35px -5px rgba(37, 99, 235, 0.4), 0 10px 15px -5px rgba(14, 165, 233, 0.3);
+  border-color: rgba(147, 197, 253, 0.5);
+}
+
+.card-3d-white {
+  background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-3d-white:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 30px -5px rgba(37, 99, 235, 0.2);
+  border-color: rgba(147, 197, 253, 0.8);
+}
+
+.btn-royal-3d {
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 50%, #1e40af 100%);
+  box-shadow: 0 6px 16px -2px rgba(37, 99, 235, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.35);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-royal-3d:hover {
+  filter: brightness(1.1);
+  box-shadow: 0 8px 24px 0 rgba(37, 99, 235, 0.65), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+  transform: translateY(-1px);
+}
+
+.btn-royal-3d:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 8px 0 rgba(37, 99, 235, 0.4);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.6);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(59, 130, 246, 0.4);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(59, 130, 246, 0.7);
+}
